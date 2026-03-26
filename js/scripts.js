@@ -188,7 +188,7 @@ function fadeIn(el, display) {
 
 /** 신랑신부 init **/
 function initGroomBride() {
-    document.querySelector("#profile-img-groom").src = "assets/photo/groom.png";
+    //document.querySelector("#profile-img-groom").src = "assets/photo/groom.png";
     document.querySelector("#groom-name-p").innerHTML = groomName+" 💕";
     document.querySelector("#groom-name-first-p").innerHTML = groomNameFirst;
     //document.querySelector("#groom-parent-p").innerHTML = groomDadName+" • "+groomMomName+"\u00a0";
