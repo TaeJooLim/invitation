@@ -195,8 +195,8 @@ function initGroomBride() {
 
     document.querySelector("#profile-img-bride").src = "assets/photo/bride.png";
     document.querySelector("#bride-name-p").innerHTML = brideName+" 💕";
-    document.querySelector("#bride-name-first-p").innerHTML = brideNameFirst;
-    document.querySelector("#bride-parent-p").innerHTML = brideDadName+" • "+brideMomName+"\u00a0";
+    //document.querySelector("#bride-name-first-p").innerHTML = brideNameFirst;
+    //document.querySelector("#bride-parent-p").innerHTML = brideDadName+" • "+brideMomName+"\u00a0";
 
     document.querySelector("#couple-thank-u-p").innerHTML = groomNameFirst+" & "+brideNameFirst;
 }
@@ -205,7 +205,7 @@ function initGroomBride() {
 /** 웨딩 데이, 웨딩홀 init **/
 function initWeddingHall() {
     document.querySelector("#date-wedding-p").innerHTML = weddingDay;
-    document.querySelector("#name-date-wedding-hall-p").innerHTML = weddingHallName;
+    //document.querySelector("#name-date-wedding-hall-p").innerHTML = weddingHallName;
 
     //document.querySelector("#name-wedding-hall-p").innerHTML = weddingHallName;
 
