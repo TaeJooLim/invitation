@@ -189,16 +189,16 @@ function fadeIn(el, display) {
 /** 신랑신부 init **/
 function initGroomBride() {
     //document.querySelector("#profile-img-groom").src = "assets/photo/groom.png";
-    document.querySelector("#groom-name-p").innerHTML = groomName+" 💕";
-    document.querySelector("#groom-name-first-p").innerHTML = groomNameFirst;
+    //document.querySelector("#groom-name-p").innerHTML = groomName+" 💕";
+    //document.querySelector("#groom-name-first-p").innerHTML = groomNameFirst;
     //document.querySelector("#groom-parent-p").innerHTML = groomDadName+" • "+groomMomName+"\u00a0";
 
-    document.querySelector("#profile-img-bride").src = "assets/photo/bride.png";
-    document.querySelector("#bride-name-p").innerHTML = brideName+" 💕";
+    //document.querySelector("#profile-img-bride").src = "assets/photo/bride.png";
+    //document.querySelector("#bride-name-p").innerHTML = brideName+" 💕";
     //document.querySelector("#bride-name-first-p").innerHTML = brideNameFirst;
     //document.querySelector("#bride-parent-p").innerHTML = brideDadName+" • "+brideMomName+"\u00a0";
 
-    document.querySelector("#couple-thank-u-p").innerHTML = groomNameFirst+" & "+brideNameFirst;
+    document.querySelector("#couple-thank-u-p").innerHTML = groomNameFirst+" ❤️ "+brideNameFirst;
 }
 
 
