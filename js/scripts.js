@@ -43,35 +43,35 @@ let weddingHallName = "더 리버사이드 호텔 노벨라홀 (LLF층)";
 let weddingHallAddress = "서울 서초구 강남대로 107길 6";
 let weddingHallNum = "02-6710-1188";
 
-let groomName = "조성진";
-let groomNameFirst = "성진";
+let groomName = "임태주";
+let groomNameFirst = "태주";
 // let groomPhoneNum = ${secrets.GROOM_PHONE_NUM};
 let groomPhoneNum = "01000002222";
 
 let groomBank = "우리은행";
 let groomAccount = "123456-1234567";
 
-let groomDadName = "조응수";
-let groomDadBank = "농협은행";
+let groomDadName = "임채훈";
+let groomDadBank = "AA은행";
 let groomDadAccount = "123456-1234568";
 
-let groomMomName = "정옥자";
-let groomMomBank = "농협은행";
+let groomMomName = "황가현";
+let groomMomBank = "AA은행";
 let groomMomAccount = "123456-1234569";
 
-let brideName = "은지연";
-let brideNameFirst = "지연";
+let brideName = "정서우";
+let brideNameFirst = "서우";
 let bridePhoneNum = "01011110000";
 
-let brideBank = "국민은행";
+let brideBank = "AA은행";
 let brideAccount = "123456-1234561";
 
-let brideDadName = "은상화";
-let brideDadBank = "신한은행";
+let brideDadName = "정태상";
+let brideDadBank = "AA은행";
 let brideDadAccount = "123456-1234562";
 
-let brideMomName = "정정희";
-let brideMomBank = "국민은행";
+let brideMomName = "서일원";
+let brideMomBank = "AA은행";
 let brideMomAccount = "123456-1234563";
 
 const removeSuffix = (str, suffix) => str.endsWith(suffix) ? str.slice(0, -suffix.length) : str;
