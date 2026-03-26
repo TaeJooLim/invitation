@@ -11899,3 +11899,42 @@ ul.tabs li.current {
     background: lightgray;
     height: 1.5rem;
 }
+
+/** 2026.03.26 클래스 추가 */
+.header-info {
+    display: inline-block;
+    padding: 28px 0;
+    border: 1px solid hsla(0,0%,71%,.7);
+    border-image: linear-gradient(180deg,hsla(0,0%,85%,.8) 50%,rgba(55,44,38,.15));
+    border-image-slice: 1;
+    border-top: 0;
+    width: calc(100% - 28px);
+    box-sizing: border-box;
+}
+
+.header-info .name-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5rem;
+    padding: 0 24px;
+}
+
+.name-wrap div span {
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+.name-wrap .divider {
+    flex: 30px;
+    font-size: 0;
+    line-height: 0;
+    text-align: center;
+}
+
+.divider div {
+    font-family: Crimson Pro;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    line-height: 2.5rem;
+}
