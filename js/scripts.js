@@ -191,7 +191,7 @@ function initGroomBride() {
     document.querySelector("#profile-img-groom").src = "assets/photo/groom.png";
     document.querySelector("#groom-name-p").innerHTML = groomName+" 💕";
     document.querySelector("#groom-name-first-p").innerHTML = groomNameFirst;
-    document.querySelector("#groom-parent-p").innerHTML = groomDadName+" • "+groomMomName+"\u00a0";
+    //document.querySelector("#groom-parent-p").innerHTML = groomDadName+" • "+groomMomName+"\u00a0";
 
     document.querySelector("#profile-img-bride").src = "assets/photo/bride.png";
     document.querySelector("#bride-name-p").innerHTML = brideName+" 💕";
@@ -207,14 +207,15 @@ function initWeddingHall() {
     document.querySelector("#date-wedding-p").innerHTML = weddingDay;
     document.querySelector("#name-date-wedding-hall-p").innerHTML = weddingHallName;
 
-    document.querySelector("#name-wedding-hall-p").innerHTML = weddingHallName;
+    //document.querySelector("#name-wedding-hall-p").innerHTML = weddingHallName;
 
-    document.querySelector("#address-wedding-hall-p").innerHTML = weddingHallAddress;
-    document.querySelector("#phone-wedding-hall-p").innerHTML = weddingHallNum;
+    //document.querySelector("#address-wedding-hall-p").innerHTML = weddingHallAddress;
+    //document.querySelector("#phone-wedding-hall-p").innerHTML = weddingHallNum;
 }
 
 
 /** 갤러리 init **/
+/**
 function initGallery() {
     document.querySelector("#gallery-item-0").src = arr[0];
     document.querySelector("#gallery-item-1").src = arr[1];
@@ -235,9 +236,11 @@ function initGallery() {
 //    document.querySelector("#gallery-item-16").src = arr[16];
 //    document.querySelector("#gallery-item-17").src = arr[17];
 }
+**/
 
 
 /** 갤러리 아이템 모달 띄우기 **/
+/**
 function showGalleryItem(seq) {
     seqImg = seq;
     imagesItem.src = arr[seqImg];
@@ -248,35 +251,41 @@ function showGalleryItem(seq) {
 
     initModalBtn();
 }
+*/
 
 
 /** 갤러리 아이템 모달 닫기 **/
+/**
 function closeGalleryItem(){
     const modal = document.querySelector('.modal');
     modal.style.display = 'none';
     document.body.style.overflow = '';
 }
-
+*/
 
 /** 갤러리 아이템 모달 이전으로 버튼 **/
+/**
 function prev(){
     seqImg = seqImg -1;
     imagesItem.src = arr[seqImg];
 
     initModalBtn();
 }
+*/
 
 
 /** 갤러리 아이템 모달 다음으로 버튼 **/
+/**
 function next(){
     seqImg = seqImg +1;
     imagesItem.src = arr[seqImg];
 
     initModalBtn();
 }
-
+*/
 
 /** 갤러리 아이템 모달 이전, 다음 버튼 init **/
+/**
 function initModalBtn() {
 
     // 첫 사진은 prev 버튼 안보이게
@@ -294,27 +303,29 @@ function initModalBtn() {
     }
 
 }
+*/
 
-
-function initTab(tab_id) {
-
-    if(tab_id == "tab-1") {
-        document.querySelector("#tab-2").classList.remove('current');
-        document.querySelector("#tab-02").classList.remove('current');
-
-        document.querySelector("#tab-1").classList.add('current');
-        document.querySelector("#tab-01").classList.add('current');
-    }
-
-    if(tab_id == "tab-2") {
-        document.querySelector("#tab-1").classList.remove('current');
-        document.querySelector("#tab-01").classList.remove('current');
-
-        document.querySelector("#tab-2").classList.add('current');
-        document.querySelector("#tab-02").classList.add('current');
-    }
+/**
+ function initTab(tab_id) {
     
+ if(tab_id == "tab-1") {
+    document.querySelector("#tab-2").classList.remove('current');
+    document.querySelector("#tab-02").classList.remove('current');
+    
+    document.querySelector("#tab-1").classList.add('current');
+    document.querySelector("#tab-01").classList.add('current');
 }
+
+if(tab_id == "tab-2") {
+    document.querySelector("#tab-1").classList.remove('current');
+    document.querySelector("#tab-01").classList.remove('current');
+    
+    document.querySelector("#tab-2").classList.add('current');
+    document.querySelector("#tab-02").classList.add('current');
+}
+
+}
+*/
 
 
 /** 마음 전하실 곳 init **/
