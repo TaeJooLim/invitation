@@ -74,6 +74,12 @@ let brideMomName = "서일원";
 let brideMomBank = "AA은행";
 let brideMomAccount = "123456-1234563";
 
+let year = "2026";
+let month = "06";
+let date = "06";
+let day = "월요일"
+let fullDate = year+"."+month+"."+date+" "+day;
+
 const removeSuffix = (str, suffix) => str.endsWith(suffix) ? str.slice(0, -suffix.length) : str;
 
 // Example usage
@@ -190,12 +196,12 @@ function fadeIn(el, display) {
 function initGroomBride() {
     //document.querySelector("#profile-img-groom").src = "assets/photo/groom.png";
     //document.querySelector("#groom-name-p").innerHTML = groomName+" 💕";
-    //document.querySelector("#groom-name-first-p").innerHTML = groomNameFirst;
+    document.querySelector("#groom-name-first-p").innerHTML = groomNameFirst;
     //document.querySelector("#groom-parent-p").innerHTML = groomDadName+" • "+groomMomName+"\u00a0";
 
     //document.querySelector("#profile-img-bride").src = "assets/photo/bride.png";
     //document.querySelector("#bride-name-p").innerHTML = brideName+" 💕";
-    //document.querySelector("#bride-name-first-p").innerHTML = brideNameFirst;
+    document.querySelector("#bride-name-first-p").innerHTML = brideNameFirst;
     //document.querySelector("#bride-parent-p").innerHTML = brideDadName+" • "+brideMomName+"\u00a0";
 
     document.querySelector("#couple-thank-u-p").innerHTML = groomNameFirst+" ❤️ "+brideNameFirst;
@@ -205,6 +211,9 @@ function initGroomBride() {
 /** 웨딩 데이, 웨딩홀 init **/
 function initWeddingHall() {
     document.querySelector("#date-wedding-p").innerHTML = weddingDay;
+    document.querySelector("#date-wedding-month").innerHTML = month;
+    document.querySelector("#date-wedding-day").innerHTML = date;
+    document.querySelector("#date-wedding-fulldate").innerHTML = fullDate;
     //document.querySelector("#name-date-wedding-hall-p").innerHTML = weddingHallName;
 
     //document.querySelector("#name-wedding-hall-p").innerHTML = weddingHallName;

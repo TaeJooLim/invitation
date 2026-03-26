@@ -11062,7 +11062,7 @@ footer.footer .social-link:hover {
   /*padding-top: 8rem;
   padding-bottom: 8rem;*/
   /*background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../assets/photo/MH_17_GHO_2118.jpg");*/
-  background: #FFD9EC;
+  background: #f7f1ea;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11172,7 +11172,7 @@ footer.footer .social-link:hover {
   /*font-family: "Noto Sans KR", sans-serif;*/
   /*font-family: "Gowun Batang", serif;*/
   font-family: "Noto Sans KR", sans-serif;
-  background: #FFD9EC;
+  background: #f7f1ea;
   /*color: #f4a2c6;*/
   color: #FA89BA;
   /*background: #f4a2c6;
@@ -11232,7 +11232,7 @@ footer.footer .social-link:hover {
       /*font-family: "Noto Sans KR", sans-serif;*/
       font-family: "Poor Story", system-ui;
       font-size: 1.4rem;
-      color: #FFD9EC;
+      color: #f7f1ea;
       line-height: 1rem;
       text-align: left;
       margin-left: 2rem;
@@ -11442,7 +11442,7 @@ p span {
     /*height: 100%;*/
     display: flex;
     justify-content: center;
-    background: #FFD9EC;
+    background: #f7f1ea;
 }
 
 .thank-u-div {
