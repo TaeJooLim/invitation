@@ -144,10 +144,10 @@ window.addEventListener('DOMContentLoaded', event => {
     initWeddingHall();
 
     // 갤러리 init
-    initGallery();
+    //initGallery();
 
     // 갤러리 아이템 모달 이전, 다음 버튼 init
-    initModalBtn();
+    //initModalBtn();
 
     // 마음 전하실 곳 init
     initSendAccount();
@@ -249,7 +249,7 @@ function showGalleryItem(seq) {
     modal.style.display = 'block';
     document.body.style.overflow = 'hidden';
 
-    initModalBtn();
+    //();
 }
 */
 
@@ -269,7 +269,7 @@ function prev(){
     seqImg = seqImg -1;
     imagesItem.src = arr[seqImg];
 
-    initModalBtn();
+    //();
 }
 */
 
@@ -280,13 +280,13 @@ function next(){
     seqImg = seqImg +1;
     imagesItem.src = arr[seqImg];
 
-    initModalBtn();
+    //();
 }
 */
 
 /** 갤러리 아이템 모달 이전, 다음 버튼 init **/
 /**
-function initModalBtn() {
+function //() {
 
     // 첫 사진은 prev 버튼 안보이게
     if(seqImg == 0) {
