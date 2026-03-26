@@ -212,7 +212,7 @@ function initGroomBride() {
 function initWeddingHall() {
     document.querySelector("#date-wedding-p").innerHTML = weddingDay;
     document.querySelector("#date-wedding-month").innerHTML = month;
-    document.querySelector("#date-wedding-day").innerHTML = date;
+    document.querySelector("#date-wedding-date").innerHTML = date;
     document.querySelector("#date-wedding-fulldate").innerHTML = fullDate;
     //document.querySelector("#name-date-wedding-hall-p").innerHTML = weddingHallName;
 
