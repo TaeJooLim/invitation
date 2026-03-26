@@ -11928,7 +11928,7 @@ ul.tabs li.current {
   box-shadow: 0 0 7px rgb(0 0 0/4%);
   margin: 14px auto;
   width: calc(100% - 28px);
-  height: calc(100% - 14px);
+  height: calc(80%);
   border-bottom: 0;
   box-sizing: border-box;
 }
