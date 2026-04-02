@@ -1,0 +1,167 @@
+:root {
+    --bg-color: #f7f1ea;
+    --white: #ffffff;
+    --point: #8a7e72;
+    --text: #333333;
+    --sub-text: #888888;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: var(--text);
+}
+
+.container {
+    max-width: 420px;
+    margin: 0 auto;
+    /* background-color: var(--white); */
+}
+
+/* swiper */
+.swiper {
+    height: 100vh;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* 메인 */
+.main-section {
+    background-color: var(--bg-color);
+    padding: 30px 20px;
+    text-align: center;
+}
+.main-card {
+    background-color: var(--white);
+    padding: 25px 25px 50px;
+}
+.main-img {
+    width: 100%;
+    height: 480px;
+    background: url('../asset/photo/main.jpg') center/cover;
+    margin-bottom: 30px;
+}
+.main-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 25px;
+    font-family: 'Nanum Myeongjo', serif;
+}
+.name { font-size: 1.25rem; }
+.main-date-box {
+    font-size: 1.5rem;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.main-location {
+    font-size: 0.9rem;
+    color: var(--sub-text);
+}
+
+/* 공통 */
+section { padding: 30px 20px; text-align: center; }
+.p-0 { padding: 0; }
+.p-30 { padding: 30; }
+
+h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1rem;
+    color: var(--point);
+    letter-spacing: 4px;
+    margin-bottom: 35px;
+}
+
+.serif-text {
+    font-family: 'Nanum Myeongjo', serif;
+    line-height: 2.2;
+    font-size: 0.95rem;
+}
+
+/* 갤러리 */
+.gallery-img-01 {
+    width: 100%;
+    height: 400px;
+    background: url('../asset/photo/sub1.jpg') center/cover;
+}
+.gallery-img-02 {
+    width: 100%;
+    height: 300px;
+    background: url('../asset/photo/sub1.jpg') center/cover;
+}
+
+/* 구분선 */
+.hr-01 {
+    background: #f7f1ea;
+    height: 2px;
+    border: 0;
+    margin: 30px 0px;
+}
+
+/* 캘린더 */
+.calendar-date { margin-bottom: 25px; font-size: 0.9rem; color: var(--sub-text); }
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 12px 5px;
+    max-width: 280px;
+    margin: 0 auto;
+    font-size: 0.8rem;
+}
+.day-label { font-size: 0.7rem; color: #bbb; }
+.today {
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+/* 계좌 */
+.sub-title { font-size: 0.85rem; color: var(--sub-text); margin-bottom: 30px; }
+.acc-btn {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 10px;
+    background: var(--bg-color);
+    border: none;
+    display: flex;
+    justify-content: space-between;
+}
+.acc-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid var(--bg-color);
+    margin-bottom: 15px;
+    text-align: left;
+}
+.copy {
+    font-size: 0.7rem;
+    color: #aaa;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+/* 푸터 */
+footer {
+    background-color: var(--bg-color);
+    padding: 70px 20px;
+}
+.footer-text {
+    color: var(--sub-text);
+    font-size: 0.85rem;
+}

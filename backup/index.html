@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, shrink-to-fit=no" />
+        <meta name="description" content="invitation" />
+        <meta name="author" content="taejoo.lim" />
+        <meta property="og:url" content="https://taejoolim.github.io/invitation/">
+        <meta property="og:title" content="태주❤️서우">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://taejoolim.github.io/invitation/assets/img/img_thumbnail.png">
+        <meta property="og:description" content="2025.06.06 (토) 오후 12:20">
+        <meta property="og:content" content="2025.06.06 (토) 오후 12:20">
+        <meta property="og:site_name" content="invitation">
+        <title>태주❤️서우</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon_heart_paper_craft.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Simple line icons-->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic&family=Noto+Sans+KR" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet" href="dist/sakura.css" />
+    </head>
+    <script>
+
+         document.addEventListener("DOMContentLoaded", function() {
+            console.log("Page fully loaded and DOM ready!");
+            loadPrivateContent1();
+            loadPrivateContent2();
+            loadPrivateContent3();
+        });
+
+        async function loadPrivateContent1() {
+            const url = 'https://api.github.com/repos/pooppooprella/account/contents/account1.html';
+
+            try {
+                const response = await fetch(url, {
+                    method: 'GET',
+                    headers: {
+                        Authorization: `Bearer ${updatedToken}`, // Personal Access Token
+                        Accept: 'application/vnd.github.v3.raw' // HTML로 읽기
+                    },
+                });
+
+                if(response.ok) {
+                    const content = await response.text(); // HTML 파일 내용
+                    
+                    let arr = content.split(',');
+                    groomAccount = arr[0];
+                    groomDadAccount = arr[1];
+                    groomMomAccount = arr[2];
+                    brideAccount = arr[3];
+                    brideDadAccount = arr[4];
+                    brideMomAccount = arr[5];
+
+                    initSendAccount();
+                } else {
+                    console.error('Failed to load private content:', response.status, await response.text());
+                }
+            } catch (error) {
+                console.error('Error fetching content:', error);
+            }
+        }
+
+
+        async function loadPrivateContent2() {
+            const url = 'https://api.github.com/repos/pooppooprella/account/contents/kakao.html';
+
+            try {
+                const response = await fetch(url, {
+                    method: 'GET',
+                    headers: {
+                        Authorization: `Bearer ${updatedToken}`, // Personal Access Token
+                        Accept: 'application/vnd.github.v3.raw' // HTML로 읽기
+                    },
+                });
+
+                if (response.ok) {
+                    const content = await response.text(); // HTML 파일 내용
+                    
+                    kakaoinit(content);            
+                } else {
+                    console.error('Failed to load private content:', response.status, await response.text());
+                }
+            } catch (error) {
+                console.error('Error fetching content:', error);
+            }
+        }
+
+        async function loadPrivateContent3() {
+            const url = 'https://api.github.com/repos/pooppooprella/account/contents/ph.html';
+
+            try {
+                const response = await fetch(url, {
+                    method: 'GET',
+                    headers: {
+                        Authorization: `Bearer ${updatedToken}`, // Personal Access Token
+                        Accept: 'application/vnd.github.v3.raw' // HTML로 읽기
+                    },
+                });
+
+                if(response.ok) {
+                    const content = await response.text(); // HTML 파일 내용
+                    
+                    let arr = content.split(',');
+                    groomPhoneNum = arr[0];
+                    bridePhoneNum = arr[1];
+
+                    initSendAccount();
+                } else {
+                    console.error('Failed to load private content:', response.status, await response.text());
+                }
+            } catch (error) {
+                console.error('Error fetching content:', error);
+            }
+        }
+      </script>
+
+        
+
+    <body id="page-top">
+        <!-- Header-->
+        <header class="masthead d-flex align-items-center">
+            <div class="photo-wrap">
+                <img class="masthead-img" src="assets/photo/picture.png" alt="" oncontextmenu="return false">
+                <div class="text-overlay top">
+                    <div class="inside"></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- 타이틀 소개 -->
+        <div id="" class="header-info">
+            <div id="" class="name-wrap">
+                <div id="" class="groom">
+                    <span id="groom-name-first-p" class="name">신랑이름</span>
+                </div>
+                <div id="" class="divider">
+                    <div id="date-wedding-month">05</div>
+                    <hr id="">
+                    <div id="date-wedding-date">30</div>
+                </div>
+                <div id="" class="bride">
+                    <span id="bride-name-first-p" class="name">신부이름</span>
+                </div>
+            </div>
+            <div id="" class="date-place">
+                <div id="date-wedding-fulldate" class="date en">날짜</div>
+            </div>
+        </div>
+
+
+
+
+        <!-- About-->
+        <section class="content-section" style="background: #f7f1ea; padding-top: 0rem;" id="about">
+            <div class="container px-4 px-lg-5 text-center">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-lg-10">
+                        <p class="mb-5 font-batang-top">
+                            <br>
+                            〰️〰️〰️ 🎀 〰️〰️〰️<br>
+                            <span style="color: white; background: #f4a2c6;">&nbsp;&nbsp;04/12 토요일&nbsp;&nbsp;<br>&nbsp;&nbsp;태주❤️서우 결혼합니다.&nbsp;&nbsp;</span>
+                            <br><br><br><br>
+                            You can not be happy every day.
+                            <br>
+                            But there are happy things every day.
+                            <br><br>
+                            매일 행복할 순 없지만,
+                            <br>
+                            행복한 것들은 매일 있어.
+                            <br><br>
+                            &lt;월트 디즈니&gt;, 곰돌이 푸 中
+                            <br><br><br>
+                            소중한 분들을 초대합니다.
+                            <br><br>
+                            오랜 기다림 속에서 저희 두 사람,
+                            <br>
+                            한 마음 되어 참된 사랑의 결실을
+                            <br>
+                            맺게 되었습니다.
+                            <br><br>
+                            오셔서 축복해 주시면 큰 기쁨이겠습니다.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="content-section profile">
+            <div>
+                <p class="mb-6 section-title-white">ʚ Groom & Bride ɞ</p>
+            </div>
+            <div style="height: 100%; padding: 2.5rem;">
+                <img class="masthead-img" src="assets/photo/picture.png" alt="" oncontextmenu="return false">
+            </div>
+        </div>
+
+        <!-- 달력 -->
+        <section class="content-section">
+            <div>
+                <p class="section-title" style="margin-bottom: 0;">ʚ Wedding Day ɞ</p>
+            </div>
+            <div style="width: 100%; height: 0.1rem; background-color: #f7f1ea;"></div>
+            <div style="background: #f7f1ea; padding-top: 4rem;">
+                <div style="padding-bottom: 3rem;">
+                    <div>
+                        <p class="font-notosans" style="text-align: center;"><i class="fa-regular fa-heart"></i></p>
+                    </div>
+                    <div style="text-align: center;">
+                        <p class="font-notosans" style="display: inline-block; margin-right: 0.3rem;"><i class="fa-regular fa-calendar"></i></p>
+                        <p id="date-wedding-p" class="font-notosans" style="display: inline-block;">웨딩 데이</p>
+                    </div>
+                </div>
+
+                <div style="display: none;">
+                    <img style="margin-top: 2rem; width: 100%;" src="assets/img/img_calendar.png" alt="" oncontextmenu="return false">
+                </div>
+
+                <div class="calendar-div">
+                    <div class="calendar-container">
+                        <div class="calendar-header">
+                            <h2 id="currentMonth"></h2>
+                        </div>
+                        <div class="calendar-days">
+                            <div class="day">S</div>
+                            <div class="day">M</div>
+                            <div class="day">T</div>
+                            <div class="day">W</div>
+                            <div class="day">T</div>
+                            <div class="day">F</div>
+                            <div class="day">S</div>
+                        </div>
+                        <div class="calendar-dates" id="calendarDates"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section>
+
+        <!-- 마음 전하실 곳 -->
+        <section class="content-section" style="padding-bottom: 0;">
+            <div>
+                <p class="section-title-white-small">ʚ 마음 전하실 곳 ɞ</p>
+            </div>
+            <div style="padding-bottom: 0rem;">
+                <details  style="background: #FFECF3; padding: 0.5rem;" open>
+                    <summary class="details-summary font-notosans">&nbsp;&nbsp;신랑 측</summary>
+
+                    <div class="container" style="margin-left: 0.5rem; padding-top: 0.5rem;">
+                        <div class="send-one-div">
+                            <div>
+                                <span class="font-notosans-9-1">🤵🏻&nbsp;</span>
+                                <span id="groom-name-send" class="font-notosans-9-1">신랑성함</span>
+                            </div>
+                            <div class="send-row-div">
+                                <div class="row">
+                                    <div class="send-info-row">
+                                        <div class="send-info-div">
+                                            <p id="groom-bank-send" class="font-notosans-9-1">신랑은행</p>
+                                        </div>
+                                        <div class="send-info-div">
+                                            <p id="groom-account-send" class="font-notosans-9-1">신랑계좌번호</p>
+                                        </div>
+                                        <div class="send-info-div">
+                                            <button type="button" class="copy-btn font-notosans-8" onclick="copyClipboard(groomAccount)">
+                                                복사
+                                                <img style="height: 1.2rem;" src="assets/icon/icon_copy.png" alt="" oncontextmenu="return false">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="send-one-div">
+                            <div>
+                                <span class="font-notosans-9-1">🫅🏻&nbsp;</span>
+                                <span id="groom-dad-name-send" class="font-notosans-9-1">아버지성함</span>
+                            </div>
+                            <div class="send-row-div">
+                                <div class="row">
+                                    <div class="send-info-row">
+                                        <div class="send-info-div">
+                                            <p id="groom-dad-bank-send" class="font-notosans-9-1">아버지은행</p>
+                                        </div>
+                                        <div class="send-info-div">
+                                            <p id="groom-dad-account-send" class="font-notosans-9-1">아버지계좌번호</p>
+                                        </div>
+                                        <div class="send-info-div">
+                                            <button type="button" class="copy-btn font-notosans-8" onclick="copyClipboard(groomDadAccount)">
+                                                복사
+                                                <img style="height: 1.2rem;" src="assets/icon/icon_copy.png" alt="" oncontextmenu="return false">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="send-one-div">
+                            <div>
+                                <span class="font-notosans-9-1">👸🏻&nbsp;</span>
+                                <span id="groom-mom-name-send" class="font-notosans-9-1">어머니성함</span>
+                            </div>
+                            <div class="send-row-div">
+                                <div class="row">
+                                    <div class="send-info-row">
+                                        <div class="send-info-div">
+                                            <p id="groom-mom-bank-send" class="font-notosans-9-1">어머니은행</p>
+                                        </div>
+                                        <div class="send-info-div">
+                                            <p id="groom-mom-account-send" class="font-notosans-9-1">어머니계좌번호</p>
+                                        </div>
+                                        <div class="send-info-div">
+                                            <button type="button" class="copy-btn font-notosans-8" onclick="copyClipboard(groomMomAccount)">
+                                                복사
+                                                <img style="height: 1.2rem;" src="assets/icon/icon_copy.png" alt="" oncontextmenu="return false">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            <div style="width: 100%; height: 0.1rem; background-color: #f4a2c6;"></div>
+            <div style="padding-bottom: 0rem;">
+                <details style="background: #FFECF3; padding: 0.5rem;" open>
+                    <summary class="font-notosans" style="padding: 0.5rem;">&nbsp;&nbsp;신부 측</summary>
+
+                    <div class="container" style="margin-left: 0.5rem; padding-top: 0.5rem;">
+                        <div class="send-one-div">
+                            <div>
+                                <span class="font-notosans-9-1">👰🏻‍&nbsp;</span>
+                                <span id="bride-name-send" class="font-notosans-9-1">신부성함</span>
+                            </div>
+                            <div class="send-row-div">
+                                <div class="row">
+                                    <div class="send-info-row">
+                                        <div class="send-info-div">
+                                            <p id="bride-bank-send" class="font-notosans-9-1">신부은행</p>
+                                        </div>
+                                        <div class="send-info-div">
+                                            <p id="bride-account-send" class="font-notosans-9-1">신부계좌번호</p>
+                                        </div>
+                                        <div class="send-info-div">
+                                            <button type="button" class="copy-btn font-notosans-8" onclick="copyClipboard(brideAccount)">
+                                                복사
+                                                <img style="height: 1.2rem;" src="assets/icon/icon_copy.png" alt="" oncontextmenu="return false">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="send-one-div">
+                            <div>
+                                <span class="font-notosans-9-1">🫅🏻&nbsp;</span>
+                                <span id="bride-dad-name-send" class="font-notosans-9-1">아버지성함</span>
+                            </div>
+                            <div class="send-row-div">
+                                <div class="row">
+                                    <div class="send-info-row">
+                                        <div class="send-info-div">
+                                            <p id="bride-dad-bank-send" class="font-notosans-9-1">아버지은행</p>
+                                        </div>
+                                        <div class="send-info-div">
+                                            <p id="bride-dad-account-send" class="font-notosans-9-1">아버지계좌번호</p>
+                                        </div>
+                                        <div class="send-info-div">
+                                            <button type="button" class="copy-btn font-notosans-8" onclick="copyClipboard(brideDadAccount)">
+                                                복사
+                                                <img style="height: 1.2rem;" src="assets/icon/icon_copy.png" alt="" oncontextmenu="return false">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="send-one-div">
+                            <div>
+                                <span class="font-notosans-9-1">👸🏻&nbsp;</span>
+                                <span id="bride-mom-name-send" class="font-notosans-9-1">어머니성함</span>
+                            </div>
+                            <div class="send-row-div">
+                                <div class="row">
+                                    <div class="send-info-row">
+
+                                        <div class="send-info-div">
+                                            <p id="bride-mom-bank-send" class="font-notosans-9-1">어머니은행</p>
+                                        </div>
+                                        <div class="send-info-div">
+                                            <p id="bride-mom-account-send" class="font-notosans-9-1">어머니계좌번호</p>
+                                        </div>
+                                        <div class="send-info-div">
+                                            <button type="button" class="copy-btn font-notosans-8" onclick="copyClipboard(brideMomAccount)">
+                                                복사
+                                                <img style="height: 1.2rem;" src="assets/icon/icon_copy.png" alt="" oncontextmenu="return false">
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+        </section>
+
+        <section class="content-section thank-u-container">
+            <div>
+                <div class="thank-u-div">
+
+                    <div class="thank-u-image">
+                        <img src="assets/photo/picture.png" alt="" style="width: 100%; max-width: 40rem;">
+                    </div>
+
+                    <div class="thank-u-top-div">
+                        <div class="mb-5 thank-u-top-text-div">
+                            <p class="font-batang-footer">
+                                <br>
+                                저희의 결혼을 축하해주시는
+                                <br>
+                                모든 분들께 진심으로 감사드립니다.
+                                <br>
+                                그 마음 잊지 않고 고이 간직하여
+                                <br>
+                                보답하도록 하겠습니다.
+                            </p>
+                        </div>
+ 
+                        <div class="thank-u-btn-div">
+                            <img style="height: 2rem;" src="assets/icon/icon_heart_origami_paper_craft.png" alt="" oncontextmenu="return false"/>
+                            <p id="couple-thank-u-p" class="mb-5 font-batang-footer">민수 & 영희</p>
+                            <div class="mb-3">
+                                <button type="button" class="share-btn" onclick="shareKakao()">
+                                    카카오톡 공유하기
+                                    <img style="height: 1.2rem; margin-bottom: 0.2rem;" src="assets/icon/icon_talk.png" alt="" oncontextmenu="return false">
+                                </button>
+                            </div>
+                            <div class="mb-3">
+                                <button type="button" class="share-btn" onclick="copyClipboard(url)">
+                                    청첩장 링크 복사하기
+                                    <img style="height: 1.2rem; margin-bottom: 0.2rem;" src="assets/icon/icon_link.png" alt="" oncontextmenu="return false">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer-->
+<!--        <footer class="footer text-center" >-->
+<!--        </footer>-->
+
+        <div class="modal modal-div" >
+            <div class="modal-close-div">
+                <a type="button" class="close_btn" onclick="closeGalleryItem()">
+<!--                    <i class="fa-regular fa-circle-xmark close-icon"></i>-->
+                    <i class="fa-solid fa-xmark close-icon"></i>
+                </a>
+            </div>
+            <div class="modal_popup">
+                <div class="modal-gallery-item">
+                    <div class="images">
+                        <img class="modal-gallery-item-img" src="" alt="" oncontextmenu="return false">
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex; height: 100%;">
+                <div style="width: 100%; vertical-align: middle; align-self: center;">
+                    <a class="prev" onclick="prev()">
+                        <i class="fa-solid fa-angle-left prev-icon"></i>
+                    </a>
+                    <a class="next" onclick="next()">
+                        <i class="fa-solid fa-angle-right next-icon"></i>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="toast-msg">토스트 메시지 입니다!</div>
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Cute+Font&family=Dongle&family=Single+Day&family=Noto+Sans+KR&family=Nanum+Gothic&family=Gowun+Batang&display=swap&family=Poor+Story" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
+        <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+        <script src="js/calendar.js"></script>
+        <script src="dist/sakura.js"></script>
+        <script>
+      var sakura = new Sakura('body', {
+        colors: [
+          {
+            gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+            gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+            gradientColorDegree: 120,
+          },
+          {
+            gradientColorStart: 'rgba(255,189,189)',
+            gradientColorEnd: 'rgba(227,170,181)',
+            gradientColorDegree: 120,
+          },
+          {
+            gradientColorStart: 'rgba(212,152,163)',
+            gradientColorEnd: 'rgba(242,185,196)',
+            gradientColorDegree: 120,
+          },
+        ],
+        delay: 200
+      });
+    </script>
+<!--    </div>-->
+    </body>
+</html>
