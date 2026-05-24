@@ -100,7 +100,12 @@ h2 {
 .gallery-img-02 {
     width: 100%;
     height: 300px;
-    background: url('../asset/photo/sub1.jpg') center/cover;
+    background: url('../asset/photo/sub2.jpg') center/cover;
+}
+.gallery-img-03 {
+    width: 100%;
+    height: 300px;
+    background: url('../asset/photo/place01.png') center/cover;
 }
 
 /* 구분선 */
@@ -120,6 +125,7 @@ h2 {
     max-width: 280px;
     margin: 0 auto;
     font-size: 0.8rem;
+    line-height: 1.9rem;
 }
 .day-label { font-size: 0.7rem; color: #bbb; }
 .today {
