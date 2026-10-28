@@ -128,8 +128,21 @@ h2 {
     line-height: 1.9rem;
 }
 .day-label { font-size: 0.7rem; color: #bbb; }
+.date-main {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 1.4rem;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+}
+.date-time {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 0.95rem;
+    color: var(--sub-text);
+    margin-bottom: 35px;
+}
 .today {
-    background-color: var(--bg-color);
+    background-color: var(--point);
+    color: var(--white);
     border-radius: 50%;
     width: 30px;
     height: 30px;
@@ -159,6 +172,19 @@ h2 {
     font-size: 0.7rem;
     color: #aaa;
     margin-left: 8px;
+    cursor: pointer;
+}
+
+/* 공유하기 */
+.share-btn {
+    width: 100%;
+    padding: 16px;
+    background: var(--point);
+    color: var(--white);
+    border: none;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 0.95rem;
+    letter-spacing: 2px;
     cursor: pointer;
 }
 
